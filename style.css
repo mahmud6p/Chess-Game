@@ -1,0 +1,15 @@
+#chess-board {
+  display: grid;
+  grid-template-columns: repeat(8, 80px);
+  grid-template-rows: repeat(8, 80px);
+  border: 4px solid #fff;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+}
+
+.white { background: #eee; }
+.black { background: #444; }
+
