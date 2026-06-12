@@ -39,3 +39,10 @@ function pawnCapture(square, target) {
 function validatePawnMove(square, target) {
   // check if move is legal
 }
+
+// Integrate pawn moves into main game loop
+function handlePawnMove(square, target) {
+  if (validatePawnMove(square, target)) {
+    // execute move
+  }
+}
