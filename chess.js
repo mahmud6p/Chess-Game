@@ -34,3 +34,8 @@ function pawnDoubleMove(square, target) {
 function pawnCapture(square, target) {
   // logic for diagonal capture
 }
+
+// Validate pawn moves
+function validatePawnMove(square, target) {
+  // check if move is legal
+}
