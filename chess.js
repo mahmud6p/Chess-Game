@@ -21,3 +21,8 @@ function setupPawns() {
   }
 }
 setupPawns();
+
+// Allow pawn to move forward by 1 step
+function pawnSingleMove(square, target) {
+  // logic for single step forward
+}
