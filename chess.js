@@ -30,3 +30,7 @@ function pawnSingleMove(square, target) {
 function pawnDoubleMove(square, target) {
   // logic for double step forward
 }
+// Allow pawn to capture diagonally
+function pawnCapture(square, target) {
+  // logic for diagonal capture
+}
