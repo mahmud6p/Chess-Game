@@ -12,3 +12,12 @@ for (let row = 8; row >= 1; row--) {
 }
 
 console.log("Chess board generated successfully!");
+
+// Add pawn pieces on board
+function setupPawns() {
+  for (let col = 0; col < 8; col++) {
+    document.getElementById(files[col] + 2).innerText = "♙"; // White pawns
+    document.getElementById(files[col] + 7).innerText = "♟"; // Black pawns
+  }
+}
+setupPawns();
