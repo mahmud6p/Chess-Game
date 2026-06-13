@@ -71,3 +71,8 @@ function rookVerticalMove(square, target) {
 function validateRookMove(square, target) {
   // check if move is legal
 }
+
+// Allow rook to capture pieces
+function rookCapture(square, target) {
+  // logic for rook capture
+}
