@@ -46,3 +46,13 @@ function handlePawnMove(square, target) {
     // execute move
   }
 }
+
+
+// Add rook pieces on board
+function setupRooks() {
+  document.getElementById("a1").innerText = "♖";
+  document.getElementById("h1").innerText = "♖";
+  document.getElementById("a8").innerText = "♜";
+  document.getElementById("h8").innerText = "♜";
+}
+setupRooks();
