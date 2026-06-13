@@ -61,3 +61,8 @@ setupRooks();
 function rookHorizontalMove(square, target) {
   // logic for horizontal move
 }
+
+// Allow rook to move vertically
+function rookVerticalMove(square, target) {
+  // logic for vertical move
+}
