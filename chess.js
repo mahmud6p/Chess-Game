@@ -66,3 +66,8 @@ function rookHorizontalMove(square, target) {
 function rookVerticalMove(square, target) {
   // logic for vertical move
 }
+
+// Validate rook moves
+function validateRookMove(square, target) {
+  // check if move is legal
+}
