@@ -56,3 +56,8 @@ function setupRooks() {
   document.getElementById("h8").innerText = "♜";
 }
 setupRooks();
+
+// Allow rook to move horizontally
+function rookHorizontalMove(square, target) {
+  // logic for horizontal move
+}
