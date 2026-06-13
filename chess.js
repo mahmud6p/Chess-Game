@@ -76,3 +76,9 @@ function validateRookMove(square, target) {
 function rookCapture(square, target) {
   // logic for rook capture
 }
+// Integrate rook moves into main game loop
+function handleRookMove(square, target) {
+  if (validateRookMove(square, target)) {
+    // execute move
+  }
+}
