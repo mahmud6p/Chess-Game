@@ -82,3 +82,14 @@ function handleRookMove(square, target) {
     // execute move
   }
 }
+
+
+// Add knight pieces on board
+function setupKnights() {
+  document.getElementById("b1").innerText = "♘";
+  document.getElementById("g1").innerText = "♘";
+  document.getElementById("b8").innerText = "♞";
+  document.getElementById("g8").innerText = "♞";
+}
+setupKnights();
+
