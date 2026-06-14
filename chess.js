@@ -97,3 +97,7 @@ setupKnights();
 function knightMove(square, target) {
   // logic for L-shape move
 }
+// Validate knight moves
+function validateKnightMove(square, target) {
+  // check if move is legal
+}
