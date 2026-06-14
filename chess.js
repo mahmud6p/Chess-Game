@@ -101,3 +101,8 @@ function knightMove(square, target) {
 function validateKnightMove(square, target) {
   // check if move is legal
 }
+
+// Allow knight to capture pieces
+function knightCapture(square, target) {
+  // logic for knight capture
+}
