@@ -93,3 +93,7 @@ function setupKnights() {
 }
 setupKnights();
 
+// Allow knight to move in L-shape
+function knightMove(square, target) {
+  // logic for L-shape move
+}
