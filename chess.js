@@ -111,3 +111,10 @@ function knightCapture(square, target) {
 function knightJump(square, target) {
   // logic for jumping over other pieces
 }
+
+// Integrate knight moves into main game loop
+function handleKnightMove(square, target) {
+  if (validateKnightMove(square, target)) {
+    // execute move
+  }
+}
