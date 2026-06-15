@@ -136,3 +136,8 @@ function bishopDiagonalMove(square, target) {
 function validateBishopMove(square, target) {
   // check if move is legal
 }
+
+// Allow bishop to capture pieces
+function bishopCapture(square, target) {
+  // logic for bishop capture
+}
