@@ -131,3 +131,8 @@ setupBishops();
 function bishopDiagonalMove(square, target) {
   // logic for diagonal move
 }
+
+// Validate bishop moves
+function validateBishopMove(square, target) {
+  // check if move is legal
+}
