@@ -126,3 +126,8 @@ function setupBishops() {
   document.getElementById("f8").innerText = "♝";
 }
 setupBishops();
+
+// Allow bishop to move diagonally
+function bishopDiagonalMove(square, target) {
+  // logic for diagonal move
+}
