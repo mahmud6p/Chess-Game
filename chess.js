@@ -118,3 +118,11 @@ function handleKnightMove(square, target) {
     // execute move
   }
 }
+// Add bishop pieces on board
+function setupBishops() {
+  document.getElementById("c1").innerText = "♗";
+  document.getElementById("f1").innerText = "♗";
+  document.getElementById("c8").innerText = "♝";
+  document.getElementById("f8").innerText = "♝";
+}
+setupBishops();
