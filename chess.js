@@ -146,3 +146,10 @@ function bishopCapture(square, target) {
 function bishopPathClear(square, target) {
   // logic to check path
 }
+
+// Integrate bishop moves into main game loop
+function handleBishopMove(square, target) {
+  if (validateBishopMove(square, target)) {
+    // execute move
+  }
+}
