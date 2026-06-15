@@ -141,3 +141,8 @@ function validateBishopMove(square, target) {
 function bishopCapture(square, target) {
   // logic for bishop capture
 }
+
+// Ensure bishop path is clear
+function bishopPathClear(square, target) {
+  // logic to check path
+}
