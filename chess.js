@@ -170,3 +170,8 @@ function queenHorizontalMove(square, target) {
 function queenVerticalMove(square, target) {
   // logic for vertical move
 }
+
+// Allow queen to move diagonally
+function queenDiagonalMove(square, target) {
+  // logic for diagonal move
+}
