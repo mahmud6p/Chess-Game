@@ -165,3 +165,8 @@ setupQueens();
 function queenHorizontalMove(square, target) {
   // logic for horizontal move
 }
+
+// Allow queen to move vertically
+function queenVerticalMove(square, target) {
+  // logic for vertical move
+}
