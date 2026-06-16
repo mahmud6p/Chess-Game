@@ -175,3 +175,8 @@ function queenVerticalMove(square, target) {
 function queenDiagonalMove(square, target) {
   // logic for diagonal move
 }
+
+// Validate queen moves
+function validateQueenMove(square, target) {
+  // check if move is legal
+}
