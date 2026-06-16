@@ -153,3 +153,10 @@ function handleBishopMove(square, target) {
     // execute move
   }
 }
+
+// Add queen pieces on board
+function setupQueens() {
+  document.getElementById("d1").innerText = "♕";
+  document.getElementById("d8").innerText = "♛";
+}
+setupQueens();
