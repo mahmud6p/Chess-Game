@@ -180,3 +180,10 @@ function queenDiagonalMove(square, target) {
 function validateQueenMove(square, target) {
   // check if move is legal
 }
+
+// Integrate queen moves into main game loop
+function handleQueenMove(square, target) {
+  if (validateQueenMove(square, target)) {
+    // execute move
+  }
+}
