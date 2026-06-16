@@ -160,3 +160,8 @@ function setupQueens() {
   document.getElementById("d8").innerText = "♛";
 }
 setupQueens();
+
+// Allow queen to move horizontally
+function queenHorizontalMove(square, target) {
+  // logic for horizontal move
+}
