@@ -206,3 +206,8 @@ function kingMove(square, target) {
 function validateKingMove(square, target) {
   // check if move is legal
 }
+
+// Allow king to capture pieces
+function kingCapture(square, target) {
+  // logic for king capture
+}
