@@ -196,3 +196,8 @@ function setupKings() {
   document.getElementById("e8").innerText = "♚";
 }
 setupKings();
+
+// Allow king to move one step in any direction
+function kingMove(square, target) {
+  // logic for one-step move
+}
