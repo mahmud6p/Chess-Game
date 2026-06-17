@@ -216,3 +216,10 @@ function kingCapture(square, target) {
 function kingSafety(square, target) {
   // logic to prevent illegal moves
 }
+
+// Integrate king moves into main game loop
+function handleKingMove(square, target) {
+  if (validateKingMove(square, target)) {
+    // execute move
+  }
+}
