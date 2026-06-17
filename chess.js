@@ -187,3 +187,12 @@ function handleQueenMove(square, target) {
     // execute move
   }
 }
+
+
+
+// Add king pieces on board
+function setupKings() {
+  document.getElementById("e1").innerText = "♔";
+  document.getElementById("e8").innerText = "♚";
+}
+setupKings();
