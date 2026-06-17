@@ -211,3 +211,8 @@ function validateKingMove(square, target) {
 function kingCapture(square, target) {
   // logic for king capture
 }
+
+// Ensure king cannot move into check
+function kingSafety(square, target) {
+  // logic to prevent illegal moves
+}
