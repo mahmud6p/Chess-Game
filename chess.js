@@ -201,3 +201,8 @@ setupKings();
 function kingMove(square, target) {
   // logic for one-step move
 }
+
+// Validate king moves
+function validateKingMove(square, target) {
+  // check if move is legal
+}
