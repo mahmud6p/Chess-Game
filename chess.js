@@ -243,3 +243,10 @@ function isCheckmate(color) {
 function gameOver(color) {
   alert(color + " is checkmated! Game Over.");
 }
+
+// Integrate check detection into game loop
+function handleCheck(color) {
+  if (isKingInCheck(color)) {
+    highlightCheck(color);
+  }
+}
