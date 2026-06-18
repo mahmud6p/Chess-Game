@@ -233,3 +233,8 @@ function isKingInCheck(color) {
 function highlightCheck(color) {
   // logic to visually mark king
 }
+
+// Detect checkmate condition
+function isCheckmate(color) {
+  // logic to detect checkmate
+}
