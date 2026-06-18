@@ -250,3 +250,10 @@ function handleCheck(color) {
     highlightCheck(color);
   }
 }
+
+// Integrate checkmate detection into game loop
+function handleCheckmate(color) {
+  if (isCheckmate(color)) {
+    gameOver(color);
+  }
+}
