@@ -228,3 +228,8 @@ function handleKingMove(square, target) {
 function isKingInCheck(color) {
   // logic to detect check
 }
+
+// Highlight king square if in check
+function highlightCheck(color) {
+  // logic to visually mark king
+}
