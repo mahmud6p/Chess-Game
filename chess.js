@@ -223,3 +223,8 @@ function handleKingMove(square, target) {
     // execute move
   }
 }
+
+// Detect if king is under attack
+function isKingInCheck(color) {
+  // logic to detect check
+}
