@@ -238,3 +238,8 @@ function highlightCheck(color) {
 function isCheckmate(color) {
   // logic to detect checkmate
 }
+
+// Display game over message
+function gameOver(color) {
+  alert(color + " is checkmated! Game Over.");
+}
