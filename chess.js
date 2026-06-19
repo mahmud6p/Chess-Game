@@ -283,3 +283,11 @@ function castleQueenSide(color) {
 function validateCastling(color, side) {
   return canCastle(color, side);
 }
+
+// Integrate castling into game loop
+function handleCastling(color, side) {
+  if (validateCastling(color, side)) {
+    if (side === "king") castleKingSide(color);
+    else castleQueenSide(color);
+  }
+}
