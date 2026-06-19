@@ -268,3 +268,8 @@ let blackCanCastleQueenSide = true;
 function canCastle(color, side) {
   // logic: king and rook not moved, path clear, not in check
 }
+
+// Perform king-side castling
+function castleKingSide(color) {
+  // move king two squares right, rook beside king
+}
