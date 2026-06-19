@@ -257,3 +257,9 @@ function handleCheckmate(color) {
     gameOver(color);
   }
 }
+
+// Prepare castling flags
+let whiteCanCastleKingSide = true;
+let whiteCanCastleQueenSide = true;
+let blackCanCastleKingSide = true;
+let blackCanCastleQueenSide = true;
