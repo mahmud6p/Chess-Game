@@ -278,3 +278,8 @@ function castleKingSide(color) {
 function castleQueenSide(color) {
   // move king two squares left, rook beside king
 }
+
+// Validate castling move
+function validateCastling(color, side) {
+  return canCastle(color, side);
+}
