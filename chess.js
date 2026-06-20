@@ -291,3 +291,6 @@ function handleCastling(color, side) {
     else castleQueenSide(color);
   }
 }
+
+// Setup pawn promotion options
+const promotionPieces = ["♕","♖","♗","♘"];
