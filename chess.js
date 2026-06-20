@@ -305,3 +305,13 @@ function isPromotion(square, color) {
 function choosePromotion() {
   return prompt("Promote pawn to: Queen, Rook, Bishop, Knight?");
 }
+
+// Apply promotion piece
+function applyPromotion(square, color) {
+  const choice = choosePromotion();
+  let piece = "♕"; // default queen
+  if (choice.toLowerCase() === "rook") piece = "♖";
+  else if (choice.toLowerCase() === "bishop") piece = "♗";
+  else if (choice.toLowerCase() === "knight") piece = "♘";
+  document.getElementById(square).innerText = piece;
+}
