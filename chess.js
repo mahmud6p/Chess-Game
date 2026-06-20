@@ -294,3 +294,9 @@ function handleCastling(color, side) {
 
 // Setup pawn promotion options
 const promotionPieces = ["♕","♖","♗","♘"];
+
+// Detect if pawn reached last rank
+function isPromotion(square, color) {
+  return (color === "white" && square.endsWith("8")) ||
+         (color === "black" && square.endsWith("1"));
+}
