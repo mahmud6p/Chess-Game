@@ -300,3 +300,8 @@ function isPromotion(square, color) {
   return (color === "white" && square.endsWith("8")) ||
          (color === "black" && square.endsWith("1"));
 }
+
+// Prompt user for promotion choice
+function choosePromotion() {
+  return prompt("Promote pawn to: Queen, Rook, Bishop, Knight?");
+}
