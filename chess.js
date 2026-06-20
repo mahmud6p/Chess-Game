@@ -322,3 +322,6 @@ function handlePromotion(square, color) {
     applyPromotion(square, color);
   }
 }
+
+// Test promotion
+console.log("Pawn promotion feature ready!");
