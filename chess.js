@@ -315,3 +315,10 @@ function applyPromotion(square, color) {
   else if (choice.toLowerCase() === "knight") piece = "♘";
   document.getElementById(square).innerText = piece;
 }
+
+// Integrate promotion into game loop
+function handlePromotion(square, color) {
+  if (isPromotion(square, color)) {
+    applyPromotion(square, color);
+  }
+}
