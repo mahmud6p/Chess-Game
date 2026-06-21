@@ -329,3 +329,8 @@ console.log("Pawn promotion feature ready!");
 
 // Setup turn flag
 let currentTurn = "white";
+
+// Toggle turn after each move
+function toggleTurn() {
+  currentTurn = (currentTurn === "white") ? "black" : "white";
+}
