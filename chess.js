@@ -348,3 +348,9 @@ function handleMove(square, target, pieceColor) {
   }
   // continue move logic
 }
+
+// Switch turn after successful move
+function completeMove(square, target, pieceColor) {
+  // execute move
+  toggleTurn();
+}
