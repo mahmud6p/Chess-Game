@@ -325,3 +325,7 @@ function handlePromotion(square, color) {
 
 // Test promotion
 console.log("Pawn promotion feature ready!");
+
+
+// Setup turn flag
+let currentTurn = "white";
