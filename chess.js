@@ -334,3 +334,8 @@ let currentTurn = "white";
 function toggleTurn() {
   currentTurn = (currentTurn === "white") ? "black" : "white";
 }
+
+// Validate if move belongs to current turn
+function validateTurn(pieceColor) {
+  return pieceColor === currentTurn;
+}
