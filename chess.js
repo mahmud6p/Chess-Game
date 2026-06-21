@@ -354,3 +354,8 @@ function completeMove(square, target, pieceColor) {
   // execute move
   toggleTurn();
 }
+
+// Display current turn
+function showTurn() {
+  console.log("Current turn: " + currentTurn);
+}
