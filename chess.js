@@ -339,3 +339,12 @@ function toggleTurn() {
 function validateTurn(pieceColor) {
   return pieceColor === currentTurn;
 }
+
+// Integrate turn validation into move handler
+function handleMove(square, target, pieceColor) {
+  if (!validateTurn(pieceColor)) {
+    console.log("Not your turn!");
+    return;
+  }
+  // continue move logic
+}
