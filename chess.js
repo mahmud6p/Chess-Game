@@ -378,3 +378,10 @@ function isCollision(target, pieceColor) {
 function kingSafetyAfterMove(square, target, pieceColor) {
   // simulate move, check if king is safe
 }
+
+// Integrate path clearance and collision into move handler
+function validateMove(square, target, pieceColor) {
+  if (!isPathClear(square, target)) return false;
+  if (isCollision(target, pieceColor)) return false;
+  return true;
+}
