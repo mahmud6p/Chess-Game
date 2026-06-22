@@ -364,3 +364,12 @@ function showTurn() {
 function isPathClear(square, target) {
   // logic to ensure no piece blocks the path
 }
+
+// Prevent moving onto own piece
+function isCollision(target, pieceColor) {
+  const targetPiece = document.getElementById(target).innerText;
+  if (targetPiece && targetPieceColor(targetPiece) === pieceColor) {
+    return true;
+  }
+  return false;
+}
