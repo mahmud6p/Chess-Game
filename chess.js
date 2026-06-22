@@ -373,3 +373,8 @@ function isCollision(target, pieceColor) {
   }
   return false;
 }
+
+// Ensure move does not leave king in check
+function kingSafetyAfterMove(square, target, pieceColor) {
+  // simulate move, check if king is safe
+}
