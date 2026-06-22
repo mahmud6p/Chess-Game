@@ -359,3 +359,8 @@ function completeMove(square, target, pieceColor) {
 function showTurn() {
   console.log("Current turn: " + currentTurn);
 }
+
+// Check if path is clear for rook, bishop, queen
+function isPathClear(square, target) {
+  // logic to ensure no piece blocks the path
+}
