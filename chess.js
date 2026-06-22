@@ -385,3 +385,9 @@ function validateMove(square, target, pieceColor) {
   if (isCollision(target, pieceColor)) return false;
   return true;
 }
+// Integrate king safety into move handler
+function validateFinalMove(square, target, pieceColor) {
+  if (!validateMove(square, target, pieceColor)) return false;
+  if (!kingSafetyAfterMove(square, target, pieceColor)) return false;
+  return true;
+}
