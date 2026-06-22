@@ -391,3 +391,12 @@ function validateFinalMove(square, target, pieceColor) {
   if (!kingSafetyAfterMove(square, target, pieceColor)) return false;
   return true;
 }
+
+// Use final validation in game loop
+function handleMove(square, target, pieceColor) {
+  if (!validateFinalMove(square, target, pieceColor)) {
+    console.log("Illegal move!");
+    return;
+  }
+  // execute move
+}
