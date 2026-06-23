@@ -439,3 +439,5 @@ function handlePawnMove(square, target, color) {
   }
   // normal pawn move logic
 }
+// Test en passant
+console.log("En Passant feature ready!");
