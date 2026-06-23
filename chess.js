@@ -403,3 +403,14 @@ function handleMove(square, target, pieceColor) {
 
 // Setup en passant target square
 let enPassantTarget = null;
+
+// Detect if pawn moved two squares
+function detectDoublePawnMove(start, target, color) {
+  if (color === "white" && start.endsWith("2") && target.endsWith("4")) {
+    enPassantTarget = target[0] + "3";
+  } else if (color === "black" && start.endsWith("7") && target.endsWith("5")) {
+    enPassantTarget = target[0] + "6";
+  } else {
+    enPassantTarget = null;
+  }
+}
