@@ -419,3 +419,14 @@ function detectDoublePawnMove(start, target, color) {
 function validateEnPassant(square, target, color) {
   return target === enPassantTarget;
 }
+
+// Apply en passant capture
+function applyEnPassant(square, target, color) {
+  if (validateEnPassant(square, target, color)) {
+    document.getElementById(target).innerText = document.getElementById(square).innerText;
+    document.getElementById(square).innerText = "";
+    // remove captured pawn
+    const capturedSquare = target[0] + (color === "white" ? "5" : "4");
+    document.getElementById(capturedSquare).innerText = "";
+  }
+}
