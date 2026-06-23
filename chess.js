@@ -430,3 +430,12 @@ function applyEnPassant(square, target, color) {
     document.getElementById(capturedSquare).innerText = "";
   }
 }
+
+// Integrate en passant into move handler
+function handlePawnMove(square, target, color) {
+  if (validateEnPassant(square, target, color)) {
+    applyEnPassant(square, target, color);
+    return;
+  }
+  // normal pawn move logic
+}
