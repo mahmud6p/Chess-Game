@@ -414,3 +414,8 @@ function detectDoublePawnMove(start, target, color) {
     enPassantTarget = null;
   }
 }
+
+// Validate en passant capture
+function validateEnPassant(square, target, color) {
+  return target === enPassantTarget;
+}
