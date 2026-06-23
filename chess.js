@@ -400,3 +400,6 @@ function handleMove(square, target, pieceColor) {
   }
   // execute move
 }
+
+// Setup en passant target square
+let enPassantTarget = null;
