@@ -482,3 +482,6 @@ function handleDraw(color) {
     alert("Game drawn!");
   }
 }
+// Setup move history
+let moveHistory = [];
+let redoStack = [];
