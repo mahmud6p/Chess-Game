@@ -511,3 +511,6 @@ function redoMove() {
 // Add undo/redo buttons
 document.getElementById("undoBtn").onclick = undoMove;
 document.getElementById("redoBtn").onclick = redoMove;
+
+// Test undo/redo
+console.log("Undo/Redo system ready!");
