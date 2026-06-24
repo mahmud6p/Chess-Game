@@ -454,3 +454,10 @@ function checkThreefoldRepetition() {
   // logic to detect if same position repeated 3 times
 }
 
+
+// Track moves without pawn move or capture
+let halfMoveCounter = 0;
+
+function checkFiftyMoveRule() {
+  return halfMoveCounter >= 100; // 50 moves each side
+}
