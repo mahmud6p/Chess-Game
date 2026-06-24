@@ -507,3 +507,7 @@ function redoMove() {
   moveHistory.push(move);
   // reapply move
 }
+
+// Add undo/redo buttons
+document.getElementById("undoBtn").onclick = undoMove;
+document.getElementById("redoBtn").onclick = redoMove;
