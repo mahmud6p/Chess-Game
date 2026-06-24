@@ -485,3 +485,9 @@ function handleDraw(color) {
 // Setup move history
 let moveHistory = [];
 let redoStack = [];
+
+// Save move into history
+function saveMove(square, target, piece) {
+  moveHistory.push({square, target, piece});
+  redoStack = []; // clear redo stack
+}
