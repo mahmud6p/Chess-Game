@@ -499,3 +499,11 @@ function undoMove() {
   redoStack.push(lastMove);
   // revert board state
 }
+
+// Redo last undone move
+function redoMove() {
+  if (redoStack.length === 0) return;
+  const move = redoStack.pop();
+  moveHistory.push(move);
+  // reapply move
+}
