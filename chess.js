@@ -441,3 +441,10 @@ function handlePawnMove(square, target, color) {
 }
 // Test en passant
 console.log("En Passant feature ready!");
+
+// Detect stalemate (no legal moves, not in check)
+function isStalemate(color) {
+  // logic to check if player has no legal moves but king not in check
+}
+
+
