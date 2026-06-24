@@ -447,4 +447,10 @@ function isStalemate(color) {
   // logic to check if player has no legal moves but king not in check
 }
 
+// Track board positions for repetition
+let positionHistory = [];
+
+function checkThreefoldRepetition() {
+  // logic to detect if same position repeated 3 times
+}
 
