@@ -466,3 +466,12 @@ function checkFiftyMoveRule() {
 function isInsufficientMaterial() {
   // logic: only kings, or king + minor piece
 }
+
+// Integrate all draw conditions
+function checkDraw(color) {
+  if (isStalemate(color)) return true;
+  if (checkThreefoldRepetition()) return true;
+  if (checkFiftyMoveRule()) return true;
+  if (isInsufficientMaterial()) return true;
+  return false;
+}
