@@ -461,3 +461,8 @@ let halfMoveCounter = 0;
 function checkFiftyMoveRule() {
   return halfMoveCounter >= 100; // 50 moves each side
 }
+
+// Detect insufficient material for checkmate
+function isInsufficientMaterial() {
+  // logic: only kings, or king + minor piece
+}
