@@ -491,3 +491,11 @@ function saveMove(square, target, piece) {
   moveHistory.push({square, target, piece});
   redoStack = []; // clear redo stack
 }
+
+// Undo last move
+function undoMove() {
+  if (moveHistory.length === 0) return;
+  const lastMove = moveHistory.pop();
+  redoStack.push(lastMove);
+  // revert board state
+}
