@@ -475,3 +475,10 @@ function checkDraw(color) {
   if (isInsufficientMaterial()) return true;
   return false;
 }
+
+// End game if draw detected
+function handleDraw(color) {
+  if (checkDraw(color)) {
+    alert("Game drawn!");
+  }
+}
