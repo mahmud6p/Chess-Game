@@ -521,3 +521,8 @@ function enableDrag(pieceId) {
   piece.draggable = true;
   piece.ondragstart = dragStart;
 }
+
+// Handle drag start
+function dragStart(event) {
+  event.dataTransfer.setData("text", event.target.id);
+}
