@@ -514,3 +514,10 @@ document.getElementById("redoBtn").onclick = redoMove;
 
 // Test undo/redo
 console.log("Undo/Redo system ready!");
+
+// Enable drag on pieces
+function enableDrag(pieceId) {
+  const piece = document.getElementById(pieceId);
+  piece.draggable = true;
+  piece.ondragstart = dragStart;
+}
