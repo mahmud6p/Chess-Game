@@ -531,3 +531,11 @@ function dragStart(event) {
 function allowDrop(event) {
   event.preventDefault();
 }
+
+// Handle drop event
+function drop(event) {
+  event.preventDefault();
+  const pieceId = event.dataTransfer.getData("text");
+  const piece = document.getElementById(pieceId);
+  event.target.appendChild(piece);
+}
