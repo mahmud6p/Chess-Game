@@ -526,3 +526,8 @@ function enableDrag(pieceId) {
 function dragStart(event) {
   event.dataTransfer.setData("text", event.target.id);
 }
+
+// Allow drop on squares
+function allowDrop(event) {
+  event.preventDefault();
+}
