@@ -544,3 +544,9 @@ function drop(event) {
 function highlightMoves(pieceId) {
   // logic to highlight squares
 }
+
+// Integrate drag and drop into game loop
+function initDragAndDrop() {
+  const pieces = document.querySelectorAll(".piece");
+  pieces.forEach(p => enableDrag(p.id));
+}
