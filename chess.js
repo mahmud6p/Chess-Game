@@ -539,3 +539,8 @@ function drop(event) {
   const piece = document.getElementById(pieceId);
   event.target.appendChild(piece);
 }
+
+// Highlight possible moves for dragged piece
+function highlightMoves(pieceId) {
+  // logic to highlight squares
+}
