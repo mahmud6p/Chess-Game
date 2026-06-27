@@ -550,3 +550,8 @@ function initDragAndDrop() {
   const pieces = document.querySelectorAll(".piece");
   pieces.forEach(p => enableDrag(p.id));
 }
+
+// Reset game function
+function resetGame() {
+  // clear board and reinitialize pieces
+}
