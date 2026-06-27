@@ -581,3 +581,6 @@ document.getElementById("resetBtn").onclick = () => {
   initPieces();
   resetFlags();
 };
+
+// Test restart
+console.log("Game restart feature ready!");
