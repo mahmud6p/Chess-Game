@@ -561,3 +561,8 @@ function clearBoard() {
   const squares = document.querySelectorAll(".square");
   squares.forEach(sq => sq.innerText = "");
 }
+
+// Reinitialize pieces to starting positions
+function initPieces() {
+  // place pawns, rooks, knights, bishops, queen, king
+}
