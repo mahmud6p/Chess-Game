@@ -566,3 +566,18 @@ function clearBoard() {
 function initPieces() {
   // place pawns, rooks, knights, bishops, queen, king
 }
+
+// Reset game state flags
+function resetFlags() {
+  currentTurn = "white";
+  enPassantTarget = null;
+  halfMoveCounter = 0;
+  positionHistory = [];
+}
+
+// Add reset button
+document.getElementById("resetBtn").onclick = () => {
+  clearBoard();
+  initPieces();
+  resetFlags();
+};
