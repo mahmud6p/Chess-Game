@@ -555,3 +555,9 @@ function initDragAndDrop() {
 function resetGame() {
   // clear board and reinitialize pieces
 }
+
+// Clear all squares
+function clearBoard() {
+  const squares = document.querySelectorAll(".square");
+  squares.forEach(sq => sq.innerText = "");
+}
