@@ -595,3 +595,17 @@ function showTimer() {
   document.getElementById("whiteTimer").innerText = whiteTime;
   document.getElementById("blackTimer").innerText = blackTime;
 }
+
+// Start timer for current turn
+function startTimer() {
+  clearInterval(timerInterval);
+  timerInterval = setInterval(() => {
+    if (currentTurn === "white") {
+      whiteTime--;
+    } else {
+      blackTime--;
+    }
+    showTimer();
+    checkTimeOut();
+  }, 1000);
+}
