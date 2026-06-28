@@ -615,3 +615,15 @@ function toggleTurn() {
   currentTurn = (currentTurn === "white") ? "black" : "white";
   startTimer();
 }
+
+// Detect timeout
+function checkTimeOut() {
+  if (whiteTime <= 0) {
+    alert("White ran out of time! Black wins.");
+    clearInterval(timerInterval);
+  }
+  if (blackTime <= 0) {
+    alert("Black ran out of time! White wins.");
+    clearInterval(timerInterval);
+  }
+}
