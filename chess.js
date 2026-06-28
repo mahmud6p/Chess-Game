@@ -609,3 +609,9 @@ function startTimer() {
     checkTimeOut();
   }, 1000);
 }
+
+// Switch timer when turn changes
+function toggleTurn() {
+  currentTurn = (currentTurn === "white") ? "black" : "white";
+  startTimer();
+}
