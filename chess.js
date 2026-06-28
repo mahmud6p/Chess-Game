@@ -589,3 +589,9 @@ console.log("Game restart feature ready!");
 let whiteTime = 300; // 5 minutes
 let blackTime = 300; // 5 minutes
 let timerInterval = null;
+
+// Display timer on UI
+function showTimer() {
+  document.getElementById("whiteTimer").innerText = whiteTime;
+  document.getElementById("blackTimer").innerText = blackTime;
+}
