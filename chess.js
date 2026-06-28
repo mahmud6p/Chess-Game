@@ -584,3 +584,8 @@ document.getElementById("resetBtn").onclick = () => {
 
 // Test restart
 console.log("Game restart feature ready!");
+
+// Setup timers for players
+let whiteTime = 300; // 5 minutes
+let blackTime = 300; // 5 minutes
+let timerInterval = null;
