@@ -627,3 +627,6 @@ function checkTimeOut() {
     clearInterval(timerInterval);
   }
 }
+
+// Test timer
+console.log("Timer feature ready!");
