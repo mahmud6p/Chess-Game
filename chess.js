@@ -630,3 +630,8 @@ function checkTimeOut() {
 
 // Test timer
 console.log("Timer feature ready!");
+
+// Setup AI move generator
+function generateAIMove(color) {
+  // placeholder for AI logic
+}
