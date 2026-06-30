@@ -635,3 +635,10 @@ console.log("Timer feature ready!");
 function generateAIMove(color) {
   // placeholder for AI logic
 }
+
+// Simple random move selection
+function randomMove(color) {
+  const possibleMoves = getAllLegalMoves(color);
+  const randomIndex = Math.floor(Math.random() * possibleMoves.length);
+  return possibleMoves[randomIndex];
+}
