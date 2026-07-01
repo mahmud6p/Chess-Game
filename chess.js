@@ -648,3 +648,10 @@ function applyAIMove(color) {
   const move = randomMove(color);
   handleMove(move.square, move.target, color);
 }
+
+// Integrate AI into game loop
+function handleAITurn(color) {
+  if (color === "black") {
+    applyAIMove(color);
+  }
+}
