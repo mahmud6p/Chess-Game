@@ -642,3 +642,9 @@ function randomMove(color) {
   const randomIndex = Math.floor(Math.random() * possibleMoves.length);
   return possibleMoves[randomIndex];
 }
+
+// Apply AI move
+function applyAIMove(color) {
+  const move = randomMove(color);
+  handleMove(move.square, move.target, color);
+}
