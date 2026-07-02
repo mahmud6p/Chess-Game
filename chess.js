@@ -670,3 +670,8 @@ console.log("AI opponent feature ready!");
 const moveSound = new Audio("sounds/move.mp3");
 const captureSound = new Audio("sounds/capture.mp3");
 const checkmateSound = new Audio("sounds/checkmate.mp3");
+
+// Play move sound
+function playMoveSound() {
+  moveSound.play();
+}
