@@ -679,3 +679,8 @@ function playMoveSound() {
 function playCaptureSound() {
   captureSound.play();
 }
+
+// Play checkmate sound
+function playCheckmateSound() {
+  checkmateSound.play();
+}
