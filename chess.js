@@ -675,3 +675,7 @@ const checkmateSound = new Audio("sounds/checkmate.mp3");
 function playMoveSound() {
   moveSound.play();
 }
+// Play capture sound
+function playCaptureSound() {
+  captureSound.play();
+}
