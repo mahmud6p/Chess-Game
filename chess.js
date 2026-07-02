@@ -655,3 +655,10 @@ function handleAITurn(color) {
     applyAIMove(color);
   }
 }
+
+// Enable player vs AI mode
+let aiEnabled = true;
+
+function toggleAIMode() {
+  aiEnabled = !aiEnabled;
+}
