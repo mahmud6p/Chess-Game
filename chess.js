@@ -665,3 +665,8 @@ function toggleAIMode() {
 
 // Test AI opponent
 console.log("AI opponent feature ready!");
+
+// Setup sound files
+const moveSound = new Audio("sounds/move.mp3");
+const captureSound = new Audio("sounds/capture.mp3");
+const checkmateSound = new Audio("sounds/checkmate.mp3");
