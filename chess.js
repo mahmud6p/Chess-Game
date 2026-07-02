@@ -662,3 +662,6 @@ let aiEnabled = true;
 function toggleAIMode() {
   aiEnabled = !aiEnabled;
 }
+
+// Test AI opponent
+console.log("AI opponent feature ready!");
