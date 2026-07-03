@@ -694,3 +694,6 @@ function handleMove(square, target, pieceColor) {
   // if checkmate
   if (isCheckmate(pieceColor)) playCheckmateSound();
 }
+
+// Test sound effects
+console.log("Sound effects feature ready!");
