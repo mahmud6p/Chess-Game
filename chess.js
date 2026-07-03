@@ -684,3 +684,13 @@ function playCaptureSound() {
 function playCheckmateSound() {
   checkmateSound.play();
 }
+
+// Integrate sounds into game loop
+function handleMove(square, target, pieceColor) {
+  // normal move
+  playMoveSound();
+  // if capture
+  if (isCapture(target)) playCaptureSound();
+  // if checkmate
+  if (isCheckmate(pieceColor)) playCheckmateSound();
+}
