@@ -697,3 +697,8 @@ function handleMove(square, target, pieceColor) {
 
 // Test sound effects
 console.log("Sound effects feature ready!");
+
+// Setup scoreboard
+let whiteWins = 0;
+let blackWins = 0;
+let draws = 0;
