@@ -702,3 +702,9 @@ console.log("Sound effects feature ready!");
 let whiteWins = 0;
 let blackWins = 0;
 let draws = 0;
+
+// Display scoreboard on UI
+function showScoreboard() {
+  document.getElementById("scoreboard").innerText =
+    `White Wins: ${whiteWins} | Black Wins: ${blackWins} | Draws: ${draws}`;
+}
