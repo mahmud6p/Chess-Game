@@ -720,3 +720,9 @@ function updateDraw() {
   draws++;
   showScoreboard();
 }
+// Integrate scoreboard with game end
+function handleGameEnd(result) {
+  if (result === "white") updateWin("white");
+  else if (result === "black") updateWin("black");
+  else if (result === "draw") updateDraw();
+}
