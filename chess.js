@@ -708,3 +708,9 @@ function showScoreboard() {
   document.getElementById("scoreboard").innerText =
     `White Wins: ${whiteWins} | Black Wins: ${blackWins} | Draws: ${draws}`;
 }
+// Update scoreboard when someone wins
+function updateWin(winner) {
+  if (winner === "white") whiteWins++;
+  else if (winner === "black") blackWins++;
+  showScoreboard();
+}
