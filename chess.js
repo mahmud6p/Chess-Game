@@ -714,3 +714,9 @@ function updateWin(winner) {
   else if (winner === "black") blackWins++;
   showScoreboard();
 }
+
+// Update scoreboard when game is drawn
+function updateDraw() {
+  draws++;
+  showScoreboard();
+}
