@@ -726,3 +726,5 @@ function handleGameEnd(result) {
   else if (result === "black") updateWin("black");
   else if (result === "draw") updateDraw();
 }
+// Test scoreboard
+console.log("Scoreboard feature ready!");
