@@ -728,3 +728,5 @@ function handleGameEnd(result) {
 }
 // Test scoreboard
 console.log("Scoreboard feature ready!");
+// Setup socket connection
+const socket = io.connect("http://localhost:3000");
