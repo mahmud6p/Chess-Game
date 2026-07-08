@@ -730,3 +730,7 @@ function handleGameEnd(result) {
 console.log("Scoreboard feature ready!");
 // Setup socket connection
 const socket = io.connect("http://localhost:3000");
+// Emit move event to server
+function sendMove(square, target, pieceColor) {
+  socket.emit("move", {square, target, pieceColor});
+}
