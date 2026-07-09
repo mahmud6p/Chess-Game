@@ -734,3 +734,7 @@ const socket = io.connect("http://localhost:3000");
 function sendMove(square, target, pieceColor) {
   socket.emit("move", {square, target, pieceColor});
 }
+// Listen for opponent move
+socket.on("move", (data) => {
+  handleMove(data.square, data.target, data.pieceColor);
+});
