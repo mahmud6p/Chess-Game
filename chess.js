@@ -738,3 +738,20 @@ function sendMove(square, target, pieceColor) {
 socket.on("move", (data) => {
   handleMove(data.square, data.target, data.pieceColor);
 });
+// server.js
+const io = require("socket.io")(3000, {
+  cors: { origin: "*" }
+});
+
+io.on("connection", (socket) => {
+  socket.on("move", (data) => {
+    socket.broadcast.emit("move", data);
+  });
+});
+
+// Toggle multiplayer mode
+let multiplayerEnabled = true;
+
+function toggleMultiplayer() {
+  multiplayerEnabled = !multiplayerEnabled;
+}
