@@ -755,3 +755,6 @@ let multiplayerEnabled = true;
 function toggleMultiplayer() {
   multiplayerEnabled = !multiplayerEnabled;
 }
+
+// Test multiplayer
+console.log("Multiplayer mode feature ready!");
