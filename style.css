@@ -13,3 +13,7 @@
 .white { background: #eee; }
 .black { background: #444; }
 
+/* Smooth transition for pieces */
+.piece {
+  transition: transform 0.5s ease-in-out;
+}
