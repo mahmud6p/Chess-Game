@@ -758,3 +758,9 @@ function toggleMultiplayer() {
 
 // Test multiplayer
 console.log("Multiplayer mode feature ready!");
+
+// Animate piece movement
+function animateMove(piece, targetSquare) {
+  const target = document.getElementById(targetSquare);
+  piece.style.transform = `translate(${target.offsetLeft}px, ${target.offsetTop}px)`;
+}
