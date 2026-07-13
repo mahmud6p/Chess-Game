@@ -764,3 +764,12 @@ function animateMove(piece, targetSquare) {
   const target = document.getElementById(targetSquare);
   piece.style.transform = `translate(${target.offsetLeft}px, ${target.offsetTop}px)`;
 }
+// Integrate animation into move handler
+function handleMove(square, target, pieceColor) {
+  const piece = document.getElementById(square).firstChild;
+  animateMove(piece, target);
+  setTimeout(() => {
+    document.getElementById(target).appendChild(piece);
+    document.getElementById(square).innerText = "";
+  }, 500);
+}
