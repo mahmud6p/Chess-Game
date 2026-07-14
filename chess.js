@@ -773,3 +773,9 @@ function handleMove(square, target, pieceColor) {
     document.getElementById(square).innerText = "";
   }, 500);
 }
+// Animate capture
+function animateCapture(piece, targetSquare) {
+  const target = document.getElementById(targetSquare);
+  target.classList.add("capture-effect");
+  setTimeout(() => target.classList.remove("capture-effect"), 500);
+}
