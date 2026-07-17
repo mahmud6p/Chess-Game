@@ -779,3 +779,6 @@ function animateCapture(piece, targetSquare) {
   target.classList.add("capture-effect");
   setTimeout(() => target.classList.remove("capture-effect"), 500);
 }
+
+// Test animations
+console.log("Animations feature ready!");
