@@ -52,3 +52,9 @@ function handleMove(square, target, pieceColor) {
   50% { background-color: transparent; }
   100% { background-color: yellow; }
 }
+/* Dark hacker theme background */
+body {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: 'Courier New', monospace;
+}
