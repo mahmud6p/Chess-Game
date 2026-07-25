@@ -73,3 +73,9 @@ body {
 .square.dark {
   background-color: #262626;
 }
+
+/* Piece styling with purple/white accents */
+.piece {
+  color: #ffffff;
+  text-shadow: 0 0 10px #8000ff;
+}
