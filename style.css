@@ -79,3 +79,14 @@ body {
   color: #ffffff;
   text-shadow: 0 0 10px #8000ff;
 }
+/* Buttons and scoreboard hacker style */
+button {
+  background-color: #1a1a1a;
+  color: #8000ff;
+  border: 1px solid #8000ff;
+  padding: 5px 10px;
+}
+#scoreboard {
+  color: #ffffff;
+  text-shadow: 0 0 5px #8000ff;
+}
