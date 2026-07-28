@@ -90,3 +90,7 @@ button {
   color: #ffffff;
   text-shadow: 0 0 5px #8000ff;
 }
+/* Glow effect for active elements */
+.active {
+  box-shadow: 0 0 15px #8000ff;
+}
