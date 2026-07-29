@@ -782,3 +782,6 @@ function animateCapture(piece, targetSquare) {
 
 // Test animations
 console.log("Animations feature ready!");
+
+// Test hacker theme
+console.log("Dark hacker theme applied!");
