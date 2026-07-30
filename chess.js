@@ -785,3 +785,10 @@ console.log("Animations feature ready!");
 
 // Test hacker theme
 console.log("Dark hacker theme applied!");
+
+// Setup lobby system
+let lobby = [];
+
+function joinLobby(playerId) {
+  lobby.push(playerId);
+}
