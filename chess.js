@@ -792,3 +792,8 @@ let lobby = [];
 function joinLobby(playerId) {
   lobby.push(playerId);
 }
+// Matchmaking logic
+function findOpponent(playerId) {
+  const opponent = lobby.find(p => p !== playerId);
+  return opponent || null;
+}
