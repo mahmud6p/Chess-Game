@@ -797,3 +797,18 @@ function findOpponent(playerId) {
   const opponent = lobby.find(p => p !== playerId);
   return opponent || null;
 }
+// server.js
+io.on("connection", (socket) => {
+  socket.on("joinLobby", (playerId) => {
+    lobby.push(playerId);
+    if (lobby.length >= 2) {
+      const [p1, p2] = lobby.splice(0, 2);
+      io.to(p1).emit("matchFound", p2);
+      io.to(p2).emit("matchFound", p1);
+    }
+  });
+});
+// Listen for match found
+socket.on("matchFound", (opponentId) => {
+  console.log("Matched with opponent:", opponentId);
+});
