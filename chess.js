@@ -812,3 +812,8 @@ io.on("connection", (socket) => {
 socket.on("matchFound", (opponentId) => {
   console.log("Matched with opponent:", opponentId);
 });
+// Start game after match
+function startGame(opponentId) {
+  alert("Game started with opponent: " + opponentId);
+  // initialize board
+}
