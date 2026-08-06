@@ -817,3 +817,6 @@ function startGame(opponentId) {
   alert("Game started with opponent: " + opponentId);
   // initialize board
 }
+
+// Test matchmaking
+console.log("Online matchmaking feature ready!");
